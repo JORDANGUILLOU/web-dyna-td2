@@ -13,7 +13,7 @@
     
         
     <?php
-    echo "Message est:".$_GET["texte"];
+    echo "Message est:".$_GET["text"];
         ?>
 </body>
 </html>
