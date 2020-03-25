@@ -6,14 +6,20 @@
 </head>
 
 <body>
-    <h2><a href="?message=Bonsoir"> Bonsoir</a>
-        <a href="?message=AHBAHNANENFAIT">Ah bah nan en fait</a>
-        <a href="?message=APLUSDANSLEBUS">A plus</a>
-    </h2>    
     
-        
-    <?php
-    echo "Message est:".$_GET["text"];
-        ?>
+<form method="GET">
+	<label for="size">size :  </form>
+	<input type="number" value="15" name="size" id="size">
+	<input type="submit" name="Valider">
+	<label for="color">color : </label>
+	<input type="letter" value="red" name="color" id="color">
+	<label for="message">message : </label>
+	<input type="letter" value="test" name="message" id="message">
+</form>
+
+<?php
+echo 'div style="font-size: ' .$_GET["size"].'px;color:'.$_GET["color"].'">'.$_GET["message"].'</div>';
+?>
+
 </body>
 </html>
