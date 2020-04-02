@@ -10,9 +10,8 @@ include "include/header.php";
 $title='exercice 4 (Itérations)';
 include "include/header.php";
 <?php
-//Récupère les paramètres l et c passés dans l'url
-$nbLignes=$_GET["l"]??10;
-$nbColonnes=$_GET["c"]??10;
+$nbLignes=$_GET["l"]??15;
+$nbColonnes=$_GET["c"]??15;
 echo "<h2>Tableau de $nbLignes par $nbColonnes</h2>";
 ?>
 
@@ -24,8 +23,8 @@ echo "<h2>Tableau de $nbLignes par $nbColonnes</h2>";
 		?>
 			<tr>
 			<?php for($j=0;$j<$nbColonnes;j++){?>
-				<td><?="$i - $j"?></td>
-				<td style="font-weight: <?=$gras ?>"<?="$i - $j"?></td>
+				<td><?="$t - $y"?></td>
+				<td style="font-weight: <?=$gras ?>"<?="$t - $y"?></td>
 			<?php }?>
 			</tr>
 		<?php }?>
@@ -39,7 +38,7 @@ echo "<h2>Tableau de $nbLignes par $nbColonnes</h2>";
         <?php for($j=0;$j<$nbColonnes;$j++){
             $couleur=($j%2==0)?"red":"black";
             ?>
-            <td style="font-weight: <?=$gras ?>;color:<?=$couleur ?>"><?="$i - $j"?></td>
+            <td style="font-weight: <?=$gras ?>;color:<?=$couleur ?>"><?="$t - $y"?></td>
         <?php }?>
         </tr>
       <?php }?>
