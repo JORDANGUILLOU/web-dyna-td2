@@ -2,9 +2,9 @@
 $title='Exercice n°4 (Itérations)';
 include "include/header.php";
 ?>
-<a href="?l=2&c=2">Tableau 2 x 2</a><br>
-<a href="?l=5&c=5">Tableau 5 x 5</a><br>
-<a href="?l=10&c=8">Tableau 10 x 8</a><br>
+<a href="?l=2&c=2">1er Tableau</a><br>
+<a href="?l=5&c=5">2emeTableau</a><br>
+<a href="?l=10&c=8">3eme Tableau</a><br>
 <hr>
 <?php 
 $title='exercice 4 (Itérations)';
@@ -38,7 +38,7 @@ echo "<h2>Tableau de $nbLignes par $nbColonnes</h2>";
         <?php for($j=0;$j<$nbColonnes;$j++){
             $couleur=($j%2==0)?"red":"black";
             ?>
-            <td style="font-weight: <?=$gras ?>;color:<?=$couleur ?>"><?="$t - $y"?></td>
+            <td style="font-weight: <?=$gras ?>;color:<?=$couleur ?>"><?="$t - $"?></td>
         <?php }?>
         </tr>
       <?php }?>
