@@ -1,33 +1,14 @@
 <?php
 namespace models;
-/**
- * @table('inscription')
-*/
+
 class Inscription{
-	/**
-	 * @id
-	 * @column("name"=>"id","nullable"=>false,"dbType"=>"int(11)")
-	 * @validator("id","constraints"=>array("autoinc"=>true))
-	**/
+
 	private $id;
 
-	/**
-	 * @column("name"=>"nom","nullable"=>false,"dbType"=>"varchar(50)")
-	 * @validator("length","constraints"=>array("max"=>50,"notNull"=>true))
-	**/
 	private $nom;
 
-	/**
-	 * @column("name"=>"email","nullable"=>false,"dbType"=>"varchar(100)")
-	 * @validator("email","constraints"=>array("notNull"=>true))
-	 * @validator("length","constraints"=>array("max"=>100))
-	**/
 	private $email;
 
-	/**
-	 * @column("name"=>"dateHeure","nullable"=>false,"dbType"=>"timestamp")
-	 * @validator("notNull")
-	**/
 	private $dateHeure;
 
 	 public function getId(){

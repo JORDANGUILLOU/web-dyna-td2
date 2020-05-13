@@ -4,9 +4,6 @@ use Ubiquity\core\postinstall\Display;
 use Ubiquity\log\Logger;
 use Ubiquity\themes\ThemesManager;
 
-/**
- * Controller IndexController
- **/
 class IndexController extends ControllerBase{
 
 	public function index(){
@@ -16,6 +13,7 @@ class IndexController extends ControllerBase{
 
 		$activeTheme=ThemesManager::getActiveTheme();
 		$themes=Display::getThemes();
+		
 		if(sizeof($themes)>0){
 			$this->loadView('@activeTheme/main/vMenu.html',compact('themes','activeTheme'));
 		}
