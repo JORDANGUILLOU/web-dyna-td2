@@ -11,7 +11,7 @@ return array(
 			"options"=>array(),
 			"cache"=>false
 			),
-	"sessionName"=>"s5eba817f19835",
+	"sessionName"=>"s5eba86c4af39d",
 	"namespaces"=>array(),
 	"templateEngine"=>"Ubiquity\\views\\engine\\Twig",
 	"templateEngineOptions"=>array(
@@ -19,11 +19,7 @@ return array(
 			),
 	"test"=>false,
 	"debug"=>true,
-	"logger"=>function (){return new \Ubiquity\log\libraries\UMonolog(array (
-  'host' => '127.0.0.1',
-  'port' => 8090,
-  'sessionName' => 's5eba817f19835',
-)['sessionName'],\Monolog\Logger::INFO);},
+	"logger"=>function (){return new \Ubiquity\log\libraries\UMonolog("tp4",\Monolog\Logger::INFO);},
 	"di"=>array(
 			"@exec"=>array(
 					"jquery"=>function ($controller){
